@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded files (images, PDFs, CAD exports, etc.) are stored in the repo,
+# and the public URL path they are served from once the site is deployed.
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: https://aliibrahim-bio.netlify.app
+display_url: https://aliibrahim-bio.netlify.app
+
+collections:
+  - name: "projects"
+    label: "Portfolio Projects"
+    label_singular: "Project"
+    description: "Work samples shown in the Selected Work section of the site."
+    folder: "content/projects"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { label: "Cover Image", name: "image", widget: "image", required: false, hint: "Shown as the card thumbnail on the site." }
+      - { label: "Attached File", name: "file", widget: "file", required: false, hint: "PDF, document, CAD export, or any work file to make downloadable." }
+      - { label: "External Link", name: "link", widget: "string", required: false, hint: "Optional — a GitHub repo, live demo, paper, etc." }
+      - { label: "Tags", name: "tags", widget: "string", required: false, hint: "Comma separated, e.g. Bioinformatics, Python" }
+      - { label: "Description", name: "body", widget: "markdown" }
