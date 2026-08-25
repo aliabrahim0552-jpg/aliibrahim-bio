@@ -7,8 +7,8 @@ backend:
 media_folder: "uploads"
 public_folder: "/uploads"
 
-site_url: https://aliibrahim-bio.netlify.app
-display_url: https://aliibrahim-bio.netlify.app
+site_url: https://eng-ali95.netlify.app
+display_url: https://eng-ali95.netlify.app
 
 collections:
   - name: "projects"
