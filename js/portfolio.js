@@ -10,8 +10,8 @@
 // SETUP: after you connect this site to your own GitHub repository, edit
 // the three values below to match it. See SETUP.md for the full walkthrough.
 // -----------------------------------------------------------------------
-var GITHUB_OWNER = "your-github-username"; // e.g. "aliibrahim"
-var GITHUB_REPO = "your-repo-name";        // e.g. "aliibrahim-bio"
+var GITHUB_OWNER = "aliabrahim0552-jpg"; // e.g. "aliibrahim"
+var GITHUB_REPO = "aliibrahim-bio";     // e.g. "aliibrahim-bio"
 var GITHUB_BRANCH = "main";
 var CONTENT_PATH = "content/projects";
 
