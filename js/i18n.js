@@ -24,7 +24,6 @@ window.SITE_I18N = (function () {
       "hero.cta.work": "View my work", "hero.cta.contact": "Get in touch",
       "hero.meta1": "Deir ez-Zor, Syria — born", "hero.meta2": "Bilecik & Kuwait — based", "hero.meta3": "Arabic · English · Turkish",
       "hero.portrait.tag": "Bilecik Şeyh Edebali University",
-      "hero.gpa.label": "GPA / 4.00",
 
       "about.eyebrow": "About", "about.h2": "A scientific mind, kept close to the bench.",
       "about.p1": "I'm a Bioengineering graduate of Bilecik Şeyh Edebali University, where I combined biological sciences with engineering fundamentals — from bioreaction engineering to biomedical electronics. My work spans molecular docking, hands-on laboratory analysis, and applied machine learning.",
@@ -127,7 +126,6 @@ window.SITE_I18N = (function () {
       "hero.cta.work": "اطّلع على أعمالي", "hero.cta.contact": "تواصل معي",
       "hero.meta1": "دير الزور، سوريا — مسقط الرأس", "hero.meta2": "بيلجيك والكويت — الإقامة", "hero.meta3": "العربية · الإنجليزية · التركية",
       "hero.portrait.tag": "جامعة بيلجيك شيخ أديبالي",
-      "hero.gpa.label": "المعدل / 4.00",
 
       "about.eyebrow": "نبذة", "about.h2": "عقل علمي لا يبتعد عن طاولة المختبر.",
       "about.p1": "أنا خريج هندسة حيوية من جامعة بيلجيك شيخ أديبالي، حيث جمعت بين العلوم البيولوجية وأساسيات الهندسة — من هندسة التفاعلات الحيوية إلى الإلكترونيات الطبية الحيوية. يمتد عملي ليشمل الالتحام الجزيئي، والتحليل المخبري العملي، وتعلّم الآلة التطبيقي.",
@@ -230,7 +228,6 @@ window.SITE_I18N = (function () {
       "hero.cta.work": "Çalışmalarımı Gör", "hero.cta.contact": "İletişime Geç",
       "hero.meta1": "Deyrizor, Suriye — doğum yeri", "hero.meta2": "Bilecik ve Kuveyt — ikamet", "hero.meta3": "Arapça · İngilizce · Türkçe",
       "hero.portrait.tag": "Bilecik Şeyh Edebali Üniversitesi",
-      "hero.gpa.label": "Not Ort. / 4.00",
 
       "about.eyebrow": "Hakkımda", "about.h2": "Laboratuvara yakın duran bilimsel bir zihin.",
       "about.p1": "Bilecik Şeyh Edebali Üniversitesi'nden Biyomühendislik mezunuyum; burada biyolojik bilimleri mühendislik temelleriyle birleştirdim — biyoreaksiyon mühendisliğinden biyomedikal elektroniğe kadar. Çalışmalarım moleküler docking, uygulamalı laboratuvar analizi ve uygulamalı makine öğrenmesini kapsıyor.",
