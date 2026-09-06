@@ -148,7 +148,7 @@ header.site-header{
 }
 .hero-grid{
   display:grid;
-  grid-template-columns:1.15fr .85fr;
+  grid-template-columns:1.4fr .6fr;
   gap:56px;
   align-items:center;
 }
@@ -185,7 +185,7 @@ header.site-header{
 .hero-meta li{ display:flex; align-items:center; gap:7px; }
 .hero-meta li::before{ content:"—"; color:var(--teal); }
 
-.hero-portrait{ position:relative; }
+.hero-portrait{ position:relative; max-width:260px; margin-inline-start:auto; }
 .portrait-frame{
   position:relative;
   border:1px solid var(--line);
@@ -203,13 +203,6 @@ header.site-header{
   font-family:var(--font-mono); font-size:11.5px; letter-spacing:.04em;
   padding:9px 14px;
 }
-.portrait-stat{
-  position:absolute; top:-18px; right:-18px;
-  background:var(--paper-2); border:1px solid var(--line);
-  padding:14px 18px; text-align:center; box-shadow:0 12px 30px -14px rgba(16,21,28,.25);
-}
-.portrait-stat .num{ font-family:var(--font-display); font-size:28px; color:var(--navy); line-height:1; }
-.portrait-stat .lbl{ font-family:var(--font-mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--slate); margin-top:4px; }
 
 /* ============================================================
    Section heading pattern
@@ -284,9 +277,8 @@ header.site-header{
 .edu-card .eyebrow{ margin-bottom:14px; }
 .edu-card h3{ font-size:20px; margin-bottom:8px; }
 .edu-card .org{ color:var(--slate); font-size:14.5px; margin-bottom:16px; display:block; }
-.edu-meta{ display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:16px; margin-top:auto; }
+.edu-meta{ display:flex; justify-content:flex-start; align-items:center; border-top:1px solid var(--line); padding-top:16px; margin-top:auto; }
 .edu-meta .date{ font-family:var(--font-mono); font-size:12px; color:var(--slate); }
-.edu-gpa{ font-family:var(--font-mono); font-size:13px; color:var(--navy); background:var(--teal-dim); padding:5px 10px; border-radius:2px; }
 
 /* Languages */
 .lang-table{ width:100%; border-collapse:collapse; margin-top:12px; }
@@ -371,7 +363,7 @@ footer{ border-top:1px solid var(--line); padding:40px 0; }
    ============================================================ */
 @media (max-width:920px){
   .hero-grid{ grid-template-columns:1fr; }
-  .hero-portrait{ max-width:360px; }
+  .hero-portrait{ max-width:220px; margin:0 auto; }
   .about-grid{ grid-template-columns:1fr; gap:40px; }
   .skills-grid{ grid-template-columns:1fr 1fr; }
   .competency-list{ grid-template-columns:1fr; }
@@ -386,9 +378,25 @@ footer{ border-top:1px solid var(--line); padding:40px 0; }
   }
   .nav-links.open{ transform:translateX(0); }
   .nav-toggle{ display:block; }
-  section{ padding:64px 0; }
+  section{ padding:56px 0; }
   .skills-grid{ grid-template-columns:1fr; }
-  .portrait-stat{ right:8px; top:-16px; }
+}
+
+/* Small phones: tighten spacing and give the hero a cleaner, app-like feel */
+@media (max-width:480px){
+  .container{ padding:0 20px; }
+  .nav{ height:64px; }
+  .nav-brand{ font-size:17px; }
+  .hero{ padding:56px 0 40px; }
+  .hero-portrait{ max-width:150px; }
+  .portrait-tag{ font-size:10px; padding:7px 10px; }
+  .hero-actions{ flex-direction:column; align-items:stretch; }
+  .btn{ justify-content:center; }
+  .hero-meta{ gap:8px 18px; }
+  section{ padding:44px 0; }
+  .section-head{ margin-bottom:36px; }
+  .lang-table{ font-size:13px; }
+  .lang-table th{ font-size:10px; }
 }
 
 /* ============================================================
@@ -403,7 +411,6 @@ footer{ border-top:1px solid var(--line); padding:40px 0; }
 [dir="rtl"] .tl-item ul li::before{ left:auto; right:0; }
 
 [dir="rtl"] .portrait-tag{ left:auto; right:-1px; }
-[dir="rtl"] .portrait-stat{ right:auto; left:-18px; }
 
 [dir="rtl"] .info-list .v{ text-align:left; }
 
@@ -411,7 +418,3 @@ footer{ border-top:1px solid var(--line); padding:40px 0; }
 [dir="rtl"] .nav-links.open{ transform:translateX(0); }
 
 [dir="rtl"] .hero h1 .accent{ font-style:normal; }
-
-@media (max-width:720px){
-  [dir="rtl"] .portrait-stat{ left:8px; right:auto; }
-}
